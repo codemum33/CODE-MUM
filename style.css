@@ -17,3 +17,8 @@ h1 {
     max-width: 600px;
     margin: auto;
 }
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+}
