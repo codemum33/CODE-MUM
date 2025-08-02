@@ -5,3 +5,61 @@
     <h1>CODE MUM AI is LIVE!</h1>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE MUM AI</title>
+    <link rel="stylesheet" href="style.css">  <!-- CSS link -->
+</head>
+<body>
+    <h1>CODE MUM AI is LIVE!</h1>
+
+    <div id="chat-box">
+        <!-- Chat messages will come here -->
+    </div>
+
+    <input type="text" id="user-input" placeholder="Ask me anything...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script src="script.js"></script>  <!-- JS link -->
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#chat-box {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+#user-input {
+    width: 70%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+}
+function sendMessage() {
+    const input = document.getElementById('user-input').value;
+    const chatBox = document.getElementById('chat-box');
+    
+    const userMsg = document.createElement('div');
+    userMsg.textContent = "You: " + input;
+    chatBox.appendChild(userMsg);
+
+    const botMsg = document.createElement('div');
+    botMsg.textContent = "CODE MUM: " + "This is a static reply!";
+    chatBox.appendChild(botMsg);
+
+    document.getElementById('user-input').value = '';
+}
