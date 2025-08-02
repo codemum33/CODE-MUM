@@ -1,0 +1,19 @@
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    color: #4CAF50;
+}
+.chat-box {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: auto;
+}
